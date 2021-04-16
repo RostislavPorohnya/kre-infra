@@ -1,0 +1,20 @@
+network:
+  ethernets:
+    {{ interface }}:
+      dhcp4: false
+      dhcp6: false
+  bridges:
+    {{ bridge }}:
+      interfaces: [ {{ interface }} ]
+      addresses: [{{ br_addresses }}]
+      gateway4: {{ br_gateway4 }}
+      mtu: 1500
+      nameservers:
+        addresses: [8.8.8.8,8.8.4.4]
+      parameters:
+        stp: true
+        forward-delay: 4
+      dhcp4: no
+      dhcp6: no
+  version: 2
+
