@@ -1,0 +1,10 @@
+---
+- name: Running playbooks
+  hosts: localhost
+  become: yes
+  become_method: sudo
+  vars_files: values.yaml
+
+  tasks:
+  - include: plays/pre-install.yaml
+  - include: plays/create_copy.yaml
