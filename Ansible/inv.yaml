@@ -1,1 +1,5 @@
-localhost
+all:
+  hosts:
+    server1:
+      ansible_host: 192.168.8.30
+      ansible_user: serv1-user

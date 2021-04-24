@@ -1,0 +1,8 @@
+- name: Echo test
+  hosts: all
+
+  tasks:
+  - name: Calling echo
+    copy: 
+      content: helloworld
+      dest: ~/test.txt
