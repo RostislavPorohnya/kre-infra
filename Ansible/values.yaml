@@ -7,6 +7,9 @@ guests:
     cpus: 2
     os_type: ubuntu20.04
     iso_path: /kvm/iso/ubuntu-20.04.2-live-server-amd64.iso
-    network: host-bridge
+    network: default
     img_path: /kvm/vhdd/ubuntu2004.img
     img_memory: 20
+    network_name: host-bridge
+    gateway4: 192.168.8.1
+    

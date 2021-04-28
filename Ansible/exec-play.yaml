@@ -1,6 +1,6 @@
 ---
 - name: Running playbooks
-  hosts: inv.yaml
+  hosts: all
   become: yes
   become_method: sudo
   vars_files: values.yaml

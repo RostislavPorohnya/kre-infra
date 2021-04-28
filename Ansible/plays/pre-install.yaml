@@ -1,4 +1,11 @@
-- name: Update apt-get repo and cache
+- name: Updating resolv.conf
+  copy: 
+    content: 
+    - nameservers 8.8.8.8
+    - nameservers 8.8.4.4
+    dest: /etc/resolve.conf
+
+- name: Apt Update
   apt:
     update_cache: yes
 
@@ -9,4 +16,11 @@
       - libvirt-daemon-system 
       - libvirt-clients
       - bridge-utils
+      - virt-manager 
+      - libvirt-bin 
+      - ubuntu-vm-builder
+      - virtinst
+      - libosinfo-bin
+
+
 

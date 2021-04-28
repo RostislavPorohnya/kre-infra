@@ -4,5 +4,5 @@
   tasks:
   - name: Calling echo
     copy: 
-      content: helloworld
+      content: sudo nano /etc/apt/apt.conf.d/20auto-upgrades
       dest: ~/test.txt
