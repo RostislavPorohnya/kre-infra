@@ -4,5 +4,5 @@
   tasks:
   - name: Calling echo
     copy: 
-      content: sudo nano /etc/apt/apt.conf.d/20auto-upgrades
-      dest: ~/test.txt
+      src: ~/Downloads/ubuntu-18.04.5-live-server-amd64.iso
+      dest: ~/ubuntu1804.iso

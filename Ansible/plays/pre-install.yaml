@@ -1,9 +1,7 @@
 - name: Updating resolv.conf
   copy: 
-    content: 
-    - nameservers 8.8.8.8
-    - nameservers 8.8.4.4
-    dest: /etc/resolve.conf
+    src: resolv.conf
+    dest: /etc/resolv.conf
 
 - name: Apt Update
   apt:
