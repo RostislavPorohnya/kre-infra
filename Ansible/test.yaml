@@ -4,5 +4,5 @@
   tasks:
   - name: Calling echo
     copy: 
-      src: ~/Downloads/ubuntu-18.04.5-live-server-amd64.iso
-      dest: ~/ubuntu1804.iso
+      src: ~/git_Infrastructure/Ansible/host-bridge.xml
+      dest: ~/host-bridge.xml
